@@ -18,8 +18,11 @@
   "homepage": "https://github.com/uber-fox-2018/orm-sequelize#readme",
   "keywords": [],
   "dependencies": {
+    "chalk": "^2.4.1",
+    "cli-table": "^0.3.1",
     "pg": "^7.4.3",
     "sequelize": "^4.38.0",
-    "sequelize-cli": "^4.0.0"
+    "sequelize-cli": "^4.0.0",
+    "table": "^4.0.3"
   }
 }
