@@ -50,7 +50,7 @@ if (tabel === 'author'){
 } else if (table === 'tag'){
     if(menu === 'add'){
         let name = argv[4]
-        Controller.c_addAuthor(name)
+        Controller.c_add(name)
 
     }else if( menu === 'readOne'){
         let id = argv[4]
@@ -68,5 +68,24 @@ if (tabel === 'author'){
     }
     
 } else if (table === 'article'){
+    if(menu === 'add'){
+        let title = argv[4]
+        let body = argv[5]
+        Controller.c_add(title,body)
+
+    }else if( menu === 'readOne'){
+        let id = argv[4]
+        Controller.c_one(id)
+    }else if(menu === 'readAll'){
+        Controller.c_all()
+
+    }else if(menu === 'update'){
+        let id = argv[4]
+        let title = argv[5]
+        Controller.c_update(id,title)
+    }else if( menu === 'delete'){
+        let id = argv[4]
+        Controller.c_destroy(id)
+    }
     
 }
