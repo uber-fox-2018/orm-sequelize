@@ -1,0 +1,17 @@
+node index.js
+node index.js help
+node index.js author add <first_name> <last_name> <religion> <gender> <age>
+node index.js author read_one <id> 
+node index.js author read_all
+node index.js author update <id> <first_name> <last_name> <religion> <gender> <age>
+node index.js author erase <id>
+node index.js tag add <name>
+node index.js tag read_one <id> 
+node index.js tag read_all
+node index.js tag update <id> <name>
+node index.js tag erase <id> 
+node index.js article add <title> <body> <authorId> <tagId>
+node index.js article read_one <id> 
+node index.js article read_all
+node index.js article update <id> <title> <body> <authorId> <tagId>
+node index.js article erase <id>
