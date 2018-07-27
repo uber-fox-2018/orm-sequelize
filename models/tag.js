@@ -5,6 +5,10 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Tag.associate = function(models) {
     // associations can be defined here
+    Tag.hasOne(models.Article, {
+      foreignKey: 'id_tag',
+      as: 'tag',
+    });
   };
   return Tag;
 };

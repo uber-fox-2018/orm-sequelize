@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Article.associate = function(models) {
     // associations can be defined here
+    Article.belongsTo(models.Author);
+    Article.belongsTo(models.Tag);
+
   };
   return Article;
 };

@@ -12,6 +12,11 @@ class Controller {
      
     }
 
+    // article
+    create() {
+        
+    }
+
     help() {
         // Tag.create({ name: 'fnord'})
         // .then(() => User.findOrCreate({where: {name: 'fnord'} }))
